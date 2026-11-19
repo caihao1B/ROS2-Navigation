@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.16)
+project(field_mapping)
+find_package(ament_cmake REQUIRED)
+find_package(RTABMap REQUIRED COMPONENTS core)
+find_package(nlohmann_json REQUIRED)
+# The Jazzy RTABMap/PCL export adds a bare definition token.
+remove_definitions(EIGEN_MPL2_ONLY)
+add_compile_definitions(EIGEN_MPL2_ONLY)
+add_executable(verify_loop src/verify_loop.cpp)
+target_compile_features(verify_loop PRIVATE cxx_std_17)
+target_link_libraries(verify_loop rtabmap::core nlohmann_json::nlohmann_json)
+install(TARGETS verify_loop DESTINATION lib/${PROJECT_NAME})
+install(PROGRAMS scripts/mapping_inputs.py scripts/replay_mapping_inputs.py DESTINATION lib/${PROJECT_NAME})
+install(DIRECTORY config launch example DESTINATION share/${PROJECT_NAME})
+if(BUILD_TESTING)
+  enable_testing()
+  add_test(NAME revisit_geometry COMMAND verify_loop
+    ${CMAKE_CURRENT_SOURCE_DIR}/example/observations.json
+    ${CMAKE_CURRENT_SOURCE_DIR}/example/reference.json)
+endif()
+ament_package()

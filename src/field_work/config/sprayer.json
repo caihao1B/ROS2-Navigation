@@ -1,0 +1,61 @@
+{
+  "operations": [
+    "POINT_SERVICE",
+    "START_WORK",
+    "STOP_WORK"
+  ],
+  "working_min_rad_s": 8.0,
+  "working_confirm_sim_s": 0.2,
+  "stopped_max_rad_s": 0.1,
+  "stopped_confirm_sim_s": 0.2,
+  "feedback_age_sim_s": 0.1,
+  "feedback_age_wall_s": 0.5,
+  "feedback_gap_s": 0.1,
+  "pose_skew_s": 0.04,
+  "context_age_s": 0.15,
+  "command_sim_s": 0.2,
+  "command_wall_s": 0.35,
+  "clock_wall_s": 0.2,
+  "stop_timeout_s": 2.0,
+  "rotor_target_rad_s": 12.0,
+  "rotor_accel_rad_s2": 40.0,
+  "sensor_delay_s": 0.02,
+  "rotor_mass_kg": 0.05,
+  "spray_stopped_v": 0.01,
+  "spray_stopped_w": 0.02,
+  "work_min_speed": 0.02,
+  "work_max_speed": 0.12,
+  "work_max_yaw_rate": 0.097,
+  "pose_erosion_m": 0.06,
+  "yaw_erosion_rad": 0.025,
+  "area_epsilon_m2": 1e-05,
+  "completion_fraction": 0.95,
+  "simulation_seed": 41,
+  "ledger_precision_m": 0.005,
+  "vehicle": "diff",
+  "tool": {
+    "vehicle": "diff",
+    "mount_xyz": [
+      0.0,
+      0,
+      0.45
+    ],
+    "collision_size": [
+      0.2,
+      0.2,
+      0.12
+    ],
+    "mass_kg": 2,
+    "virtual_effect_radius_m": 0.2,
+    "docking_error_m": 0.08,
+    "service_duration_sim_s": 3.0,
+    "requires_stopped": true
+  },
+  "feedback_period_s": 0.02,
+  "session": "orchard-service",
+  "map_id": "orchard",
+  "map_revision": "measured-field",
+  "plan_revision": "point-sequence",
+  "frame_epoch": "local-map",
+  "tool_revision": "metered-sprayer"
+}

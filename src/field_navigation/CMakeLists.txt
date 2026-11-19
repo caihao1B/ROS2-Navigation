@@ -1,0 +1,40 @@
+cmake_minimum_required(VERSION 3.16)
+project(field_navigation)
+
+find_package(ament_cmake REQUIRED)
+find_package(behaviortree_cpp REQUIRED)
+find_package(nlohmann_json REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(std_srvs REQUIRED)
+find_package(ament_index_cpp REQUIRED)
+
+add_library(inspection_policy INTERFACE)
+target_compile_features(inspection_policy INTERFACE cxx_std_17)
+target_include_directories(inspection_policy INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/include")
+target_link_libraries(inspection_policy INTERFACE behaviortree_cpp::behaviortree_cpp nlohmann_json::nlohmann_json)
+
+add_executable(inspection_replay src/inspection_replay.cpp)
+target_link_libraries(inspection_replay inspection_policy)
+add_executable(inspection_supervisor src/inspection_supervisor.cpp)
+target_link_libraries(inspection_supervisor inspection_policy)
+ament_target_dependencies(inspection_supervisor rclcpp std_msgs std_srvs ament_index_cpp)
+install(TARGETS inspection_replay inspection_supervisor DESTINATION lib/${PROJECT_NAME})
+install(DIRECTORY config DESTINATION share/${PROJECT_NAME})
+
+if(BUILD_TESTING)
+  enable_testing()
+  find_package(Python3 REQUIRED COMPONENTS Interpreter)
+  add_executable(inspection_policy_test tests/inspection_policy_test.cpp)
+  target_link_libraries(inspection_policy_test inspection_policy)
+  target_compile_options(inspection_policy_test PRIVATE -UNDEBUG)
+  add_test(NAME inspection_policy_branches COMMAND inspection_policy_test
+    "${CMAKE_CURRENT_SOURCE_DIR}/config/inspection_policy.json"
+    "${CMAKE_CURRENT_SOURCE_DIR}/config/inspection_tree.xml")
+  set(replay_example "${CMAKE_CURRENT_SOURCE_DIR}/../../examples/follow_stop_resume/run.py")
+  if(EXISTS "${replay_example}")
+    add_test(NAME follow_stop_resume_replay COMMAND "${Python3_EXECUTABLE}" "${replay_example}"
+      --executable $<TARGET_FILE:inspection_replay> --config "${CMAKE_CURRENT_SOURCE_DIR}/config")
+  endif()
+endif()
+ament_package()

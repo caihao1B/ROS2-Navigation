@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>field_navigation</name>
+  <version>0.1.0</version>
+  <description>Inspection decisions, observed-leader replay and navigation cancellation supervision.</description>
+  <maintainer email="127421278+caihao1B@users.noreply.github.com">caihao1B</maintainer>
+  <license>LicenseRef-Project-Unspecified</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>behaviortree_cpp</depend>
+  <depend>nlohmann-json-dev</depend>
+  <depend>rclcpp</depend>
+  <depend>ament_index_cpp</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

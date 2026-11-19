@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+<title id="title">差速点喷的规划与出液确认</title>
+<desc id="desc">左侧是从随仓几何重新求得的目标访问顺序。右侧摘取独立点服务记录中的精停、流量计和账本事件。</desc>
+<style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",sans-serif}</style>
+<rect x="0.0" y="0.0" width="960.0" height="540.0" rx="0" fill="#f5f7f2" stroke="none" stroke-width="1"/>
+<text x="28.0" y="50.0" text-anchor="start" font-size="34" font-weight="700" fill="#17393c">差速点喷的规划与出液确认</text>
+<rect x="22.0" y="76.0" width="446.0" height="430.0" rx="17" fill="#ffffff" stroke="#c9d8d1" stroke-width="1"/>
+<text x="44.0" y="121.0" text-anchor="start" font-size="25" font-weight="700" fill="#17393c">选择目标访问顺序</text>
+<text x="44.0" y="153.0" text-anchor="start" font-size="18" font-weight="400" fill="#486568">离线规划 · 先验可通行区域</text>
+<rect x="482.0" y="76.0" width="456.0" height="430.0" rx="17" fill="#ffffff" stroke="#c9d8d1" stroke-width="1"/>
+<text x="504.0" y="121.0" text-anchor="start" font-size="25" font-weight="700" fill="#17393c">停稳后执行点服务</text>
+<text x="504.0" y="153.0" text-anchor="start" font-size="18" font-weight="400" fill="#486568">仿真观测 · 单点反馈</text>
+<rect x="49.0" y="174.0" width="390.0" height="251.0" rx="8" fill="#edf2ed" stroke="none" stroke-width="1"/>
+<path d="M196.8 404.6 L138.1 339.3 L170.7 221.8 L320.8 176.1 L439.0 244.6 L439.0 282.8 L425.2 365.4 L439.0 388.3 L439.0 425.0 L184.3 425.0 L196.8 404.6 Z M418.9 307.1 L418.9 291.9 L403.7 291.9 L403.7 307.1 L418.9 307.1 Z" fill="#d7e3d8" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M184.3 425.0 L196.8 404.6 L138.1 339.3 L170.7 221.8 L320.8 176.1 L439.0 244.6" fill="none" fill-rule="evenodd" stroke="#aac1af" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M439.0 282.8 L425.2 365.4 L439.0 388.3" fill="none" fill-rule="evenodd" stroke="#aac1af" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M403.7 307.1 L418.9 307.1 L418.9 291.9 L403.7 291.9 L403.7 307.1" fill="none" fill-rule="evenodd" stroke="#aac1af" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M209.8 402.2 L232.6 402.2 L255.4 402.2 L278.2 402.2 L278.2 379.4 L278.2 356.5 L278.2 333.7 L278.2 310.9 L278.2 288.1 L278.2 265.3 L255.4 265.3 L255.4 288.1 L255.4 310.9 L255.4 333.7 L255.4 356.5 L255.4 379.4 L232.6 379.4 L232.6 356.5 L232.6 333.7 L232.6 310.9 L232.6 288.1 L232.6 265.3 L232.6 242.5 L255.4 242.5 L278.2 242.5 L301.0 242.5 L301.0 265.3 L301.0 288.1 L323.9 265.3 L323.9 242.5 L323.9 219.6 L323.9 196.8 L301.0 196.8 L301.0 219.6 L278.2 219.6 L255.4 219.6 L232.6 219.6 L209.8 219.6 L209.8 242.5 L187.0 242.5 L187.0 265.3 L209.8 265.3 L209.8 288.1 L209.8 310.9 L209.8 333.7 L209.8 356.5 L187.0 356.5 L187.0 333.7 L187.0 310.9 L187.0 288.1 L164.1 288.1 L164.1 310.9 L164.1 333.7 L164.1 356.5 L187.0 379.4 L209.8 379.4" fill="none" fill-rule="evenodd" stroke="#087766" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="209.8" cy="402.2" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="232.6" cy="402.2" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="255.4" cy="402.2" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="278.2" cy="402.2" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="278.2" cy="379.4" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="278.2" cy="356.5" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="278.2" cy="333.7" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="278.2" cy="310.9" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="278.2" cy="288.1" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="278.2" cy="265.3" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="255.4" cy="265.3" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="255.4" cy="288.1" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="255.4" cy="310.9" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="255.4" cy="333.7" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="255.4" cy="356.5" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="255.4" cy="379.4" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="232.6" cy="379.4" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="232.6" cy="356.5" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="232.6" cy="333.7" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="232.6" cy="310.9" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="232.6" cy="288.1" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="232.6" cy="265.3" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="232.6" cy="242.5" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="255.4" cy="242.5" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="278.2" cy="242.5" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="301.0" cy="242.5" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="301.0" cy="265.3" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="301.0" cy="288.1" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="323.9" cy="265.3" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="323.9" cy="242.5" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="323.9" cy="219.6" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="323.9" cy="196.8" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="301.0" cy="196.8" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="301.0" cy="219.6" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="278.2" cy="219.6" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="255.4" cy="219.6" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="232.6" cy="219.6" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="209.8" cy="219.6" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="209.8" cy="242.5" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="187.0" cy="242.5" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="187.0" cy="265.3" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="209.8" cy="265.3" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="209.8" cy="288.1" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="209.8" cy="310.9" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="209.8" cy="333.7" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="209.8" cy="356.5" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="187.0" cy="356.5" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="187.0" cy="333.7" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="187.0" cy="310.9" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="187.0" cy="288.1" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="164.1" cy="288.1" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="164.1" cy="310.9" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="164.1" cy="333.7" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="164.1" cy="356.5" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="187.0" cy="379.4" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<circle cx="209.8" cy="379.4" r="3.3" fill="#ffffff" stroke="#087766" stroke-width="1.8"/>
+<path d="M270.4 402.2 L263.2 404.6 L263.2 399.7 Z" fill="#087766" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M278.2 273.1 L280.7 280.3 L275.8 280.3 Z" fill="#087766" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M232.6 295.9 L235.0 303.1 L230.1 303.1 Z" fill="#087766" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M209.8 234.6 L207.3 227.4 L212.2 227.4 Z" fill="#087766" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M164.1 303.1 L161.7 295.9 L166.6 295.9 Z" fill="#087766" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="209.8" cy="402.2" r="7.3" fill="#087766" stroke="#ffffff" stroke-width="2.3"/>
+<rect x="203.8" y="373.4" width="12.0" height="12.0" rx="1" fill="#ac6920" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="59.0" cy="455.0" r="6" fill="#087766" stroke="none" stroke-width="1"/>
+<text x="74.0" y="462.0" text-anchor="start" font-size="17" font-weight="400" fill="#27484b">起点</text>
+<rect x="142.0" y="449.0" width="12.0" height="12.0" rx="1" fill="#ac6920" stroke="none" stroke-width="1"/>
+<text x="164.0" y="462.0" text-anchor="start" font-size="17" font-weight="400" fill="#27484b">终点</text>
+<circle cx="238.0" cy="455.0" r="4.2" fill="#ffffff" stroke="#087766" stroke-width="1.7"/>
+<text x="253.0" y="462.0" text-anchor="start" font-size="17" font-weight="400" fill="#27484b">目标点</text>
+<path d="M49.0 480.0 L76.0 480.0" fill="none" fill-rule="evenodd" stroke="#087766" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="86.0" y="487.0" text-anchor="start" font-size="16" font-weight="400" fill="#486568">按车身净空筛选连边，再优化转角</text>
+<circle cx="520.0" cy="191.0" r="8" fill="#ffffff" stroke="#087766" stroke-width="3"/>
+<text x="542.0" y="199.0" text-anchor="start" font-size="23" font-weight="700" fill="#17393c">定位与底盘确认已停稳</text>
+<text x="542.0" y="227.0" text-anchor="start" font-size="17" font-weight="400" fill="#486568">停车状态持续满足条件，工具获准工作。</text>
+<text x="510.0" y="270.0" text-anchor="start" font-size="18" font-weight="600" fill="#087766">流量计读数</text>
+<path d="M530.5 360.0 L530.5 360.0 L532.4 360.0 L534.4 360.0 L536.4 360.0 L538.3 360.0 L540.3 360.0 L542.3 360.0 L544.2 360.0 L546.2 360.0 L548.2 360.0 L550.1 360.0 L552.1 360.0 L554.2 308.4 L556.0 303.7 L558.0 298.4 L560.1 293.3 L561.9 289.0 L563.9 289.0 L566.0 289.0 L568.0 289.0 L569.9 289.0 L571.9 289.0 L573.9 289.0 L575.8 289.0 L577.8 289.0 L579.8 289.0 L581.7 289.0 L583.7 289.0 L585.7 289.0 L587.6 289.0 L589.6 289.0 L591.7 289.0 L593.5 289.0 L595.5 289.0 L597.6 289.0 L599.4 289.0 L601.4 289.0 L603.5 289.0 L605.3 289.0 L607.4 289.0 L609.4 289.0 L611.2 289.0 L613.3 289.0 L615.3 289.0 L617.2 289.0 L619.2 289.0 L621.2 289.0 L623.1 289.0 L625.1 289.0 L627.1 289.0 L629.0 289.0 L631.0 289.0 L633.0 289.0 L634.9 289.0 L636.9 289.0 L638.9 289.0 L640.8 289.0 L642.8 289.0 L644.9 289.0 L646.7 289.0 L648.7 289.0 L650.8 289.0 L652.6 289.0 L654.7 289.0 L656.7 289.0 L658.5 289.0 L660.6 289.0 L662.6 289.0 L664.4 289.0 L666.5 289.0 L668.5 289.0 L670.4 289.0 L672.4 289.0 L674.4 289.0 L676.3 289.0 L678.3 289.0 L680.3 289.0 L682.2 289.0 L684.2 289.0 L686.2 289.0 L688.1 289.0 L690.1 289.0 L692.2 289.0 L694.0 289.0 L696.0 289.0 L698.1 289.0 L699.9 289.0 L701.9 289.0 L704.0 289.0 L705.8 289.0 L707.9 289.0 L709.9 289.0 L711.7 289.0 L713.8 289.0 L715.8 289.0 L717.6 289.0 L719.7 289.0 L721.7 289.0 L723.6 289.0 L725.6 289.0 L727.6 289.0 L729.7 289.0 L731.5 289.0 L733.5 289.0 L735.6 289.0 L737.4 289.0 L739.4 289.0 L741.5 289.0 L743.3 289.0 L745.4 289.0 L747.4 289.0 L749.2 289.0 L751.3 289.0 L753.3 289.0 L755.1 289.0 L757.2 289.0 L759.2 289.0 L761.1 289.0 L763.1 289.0 L765.1 289.0 L767.0 289.0 L769.0 289.0 L771.0 289.0 L772.9 289.0 L774.9 289.0 L776.9 289.0 L778.8 289.0 L780.8 289.0 L782.9 289.0 L784.7 289.0 L786.7 289.0 L788.8 289.0 L790.6 289.0 L792.6 289.0 L794.7 289.0 L796.5 289.0 L798.6 289.0 L800.6 289.0 L802.4 289.0 L804.5 289.0 L806.5 289.0 L808.4 289.0 L810.4 289.0 L812.4 289.0 L814.3 289.0 L816.3 289.0 L818.3 289.0 L820.2 289.0 L822.2 289.0 L824.2 289.0 L826.1 289.0 L828.1 289.0 L830.2 289.0 L832.0 289.0 L834.0 289.0 L836.1 289.0 L837.9 289.0 L839.9 289.0 L842.0 289.0 L843.8 289.0 L845.9 289.0 L847.9 289.0 L849.7 289.0 L851.8 289.0 L853.8 289.0 L855.6 360.0 L857.7 360.0 L859.7 360.0 L861.6 360.0 L863.6 360.0 L865.6 360.0 L867.5 360.0 L869.5 360.0 L871.5 360.0 L873.4 360.0 L875.4 360.0 L877.4 360.0 L879.3 360.0 L881.3 360.0 L883.4 360.0 L885.2 360.0 L887.2 360.0 L889.3 360.0 L891.3 360.0 L893.1 360.0 L895.2 360.0 L897.2 360.0 L899.1 360.0 L901.1 360.0 L903.1 360.0 L903.1 360.0 Z" fill="#e4efe9" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M530.5 360.0 L532.4 360.0 L534.4 360.0 L536.4 360.0 L538.3 360.0 L540.3 360.0 L542.3 360.0 L544.2 360.0 L546.2 360.0 L548.2 360.0 L550.1 360.0 L552.1 360.0 L554.2 308.4 L556.0 303.7 L558.0 298.4 L560.1 293.3 L561.9 289.0 L563.9 289.0 L566.0 289.0 L568.0 289.0 L569.9 289.0 L571.9 289.0 L573.9 289.0 L575.8 289.0 L577.8 289.0 L579.8 289.0 L581.7 289.0 L583.7 289.0 L585.7 289.0 L587.6 289.0 L589.6 289.0 L591.7 289.0 L593.5 289.0 L595.5 289.0 L597.6 289.0 L599.4 289.0 L601.4 289.0 L603.5 289.0 L605.3 289.0 L607.4 289.0 L609.4 289.0 L611.2 289.0 L613.3 289.0 L615.3 289.0 L617.2 289.0 L619.2 289.0 L621.2 289.0 L623.1 289.0 L625.1 289.0 L627.1 289.0 L629.0 289.0 L631.0 289.0 L633.0 289.0 L634.9 289.0 L636.9 289.0 L638.9 289.0 L640.8 289.0 L642.8 289.0 L644.9 289.0 L646.7 289.0 L648.7 289.0 L650.8 289.0 L652.6 289.0 L654.7 289.0 L656.7 289.0 L658.5 289.0 L660.6 289.0 L662.6 289.0 L664.4 289.0 L666.5 289.0 L668.5 289.0 L670.4 289.0 L672.4 289.0 L674.4 289.0 L676.3 289.0 L678.3 289.0 L680.3 289.0 L682.2 289.0 L684.2 289.0 L686.2 289.0 L688.1 289.0 L690.1 289.0 L692.2 289.0 L694.0 289.0 L696.0 289.0 L698.1 289.0 L699.9 289.0 L701.9 289.0 L704.0 289.0 L705.8 289.0 L707.9 289.0 L709.9 289.0 L711.7 289.0 L713.8 289.0 L715.8 289.0 L717.6 289.0 L719.7 289.0 L721.7 289.0 L723.6 289.0 L725.6 289.0 L727.6 289.0 L729.7 289.0 L731.5 289.0 L733.5 289.0 L735.6 289.0 L737.4 289.0 L739.4 289.0 L741.5 289.0 L743.3 289.0 L745.4 289.0 L747.4 289.0 L749.2 289.0 L751.3 289.0 L753.3 289.0 L755.1 289.0 L757.2 289.0 L759.2 289.0 L761.1 289.0 L763.1 289.0 L765.1 289.0 L767.0 289.0 L769.0 289.0 L771.0 289.0 L772.9 289.0 L774.9 289.0 L776.9 289.0 L778.8 289.0 L780.8 289.0 L782.9 289.0 L784.7 289.0 L786.7 289.0 L788.8 289.0 L790.6 289.0 L792.6 289.0 L794.7 289.0 L796.5 289.0 L798.6 289.0 L800.6 289.0 L802.4 289.0 L804.5 289.0 L806.5 289.0 L808.4 289.0 L810.4 289.0 L812.4 289.0 L814.3 289.0 L816.3 289.0 L818.3 289.0 L820.2 289.0 L822.2 289.0 L824.2 289.0 L826.1 289.0 L828.1 289.0 L830.2 289.0 L832.0 289.0 L834.0 289.0 L836.1 289.0 L837.9 289.0 L839.9 289.0 L842.0 289.0 L843.8 289.0 L845.9 289.0 L847.9 289.0 L849.7 289.0 L851.8 289.0 L853.8 289.0 L855.6 360.0 L857.7 360.0 L859.7 360.0 L861.6 360.0 L863.6 360.0 L865.6 360.0 L867.5 360.0 L869.5 360.0 L871.5 360.0 L873.4 360.0 L875.4 360.0 L877.4 360.0 L879.3 360.0 L881.3 360.0 L883.4 360.0 L885.2 360.0 L887.2 360.0 L889.3 360.0 L891.3 360.0 L893.1 360.0 L895.2 360.0 L897.2 360.0 L899.1 360.0 L901.1 360.0 L903.1 360.0" fill="none" fill-rule="evenodd" stroke="#087766" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M527.0 362.0 L907.0 362.0" fill="none" fill-rule="evenodd" stroke="#486568" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="527.0" y="387.0" text-anchor="start" font-size="17" font-weight="400" fill="#486568">停稳</text>
+<text x="907.0" y="387.0" text-anchor="end" font-size="17" font-weight="400" fill="#486568">作业回执</text>
+<path d="M510.0 407.0 L907.0 407.0" fill="none" fill-rule="evenodd" stroke="#c9d8d1" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="520.0" cy="441.0" r="8" fill="#087766" stroke="none" stroke-width="1"/>
+<text x="542.0" y="449.0" text-anchor="start" font-size="23" font-weight="700" fill="#17393c">账本确认，再去下一点</text>
+<text x="542.0" y="477.0" text-anchor="start" font-size="17" font-weight="400" fill="#486568">重复请求复用同一笔作业回执。</text>
+</svg>

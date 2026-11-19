@@ -1,0 +1,1 @@
+<library path="field_goal_planner"><class name="field::ExactGoalPlanner" type="field::ExactGoalPlanner" base_class_type="nav2_core::GlobalPlanner"/></library>

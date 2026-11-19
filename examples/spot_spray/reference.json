@@ -1,0 +1,26 @@
+{
+  "planning": {
+    "original": {
+      "length_m": 167.485281,
+      "turn_rad": 50.265482
+    },
+    "optimized": {
+      "length_m": 167.485281,
+      "turn_rad": 34.557519
+    }
+  },
+  "meter_quantity": 3.0519999999999996,
+  "service_points": [
+    "point_11_20",
+    "point_10_20",
+    "point_9_20",
+    "point_8_20"
+  ],
+  "phase_totals": {
+    "travel_s": 57.778,
+    "precision_s": 7.528,
+    "localization_wait_s": 0.0,
+    "spray_flow_s": 13.05,
+    "other_s": 3.438
+  }
+}

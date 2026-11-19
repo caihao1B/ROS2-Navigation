@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="726" viewBox="0 0 760 726" role="img" aria-labelledby="title desc" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, sans-serif">
+  <title id="title">巡检车跟随、等待与恢复的同场观测</title>
+  <desc id="desc">三幅沿巡检路线展开的俯视示意，使用三个时刻的定位进度和观测净距。青绿色巡检车跟随琥珀色前车，前车停下后取消导航并停车等待，条件恢复后重新跟随。下图显示按时序采样的定位进度，停车窗内两车物理位姿保持不变，恢复后巡检车再次发生位移。</desc>
+  <rect x="0" y="0" width="760" height="726" fill="#f5f7f2" rx="20" />
+  <text x="27" y="52" font-size="34" fill="#17393c" font-weight="700" text-anchor="start">前车停下，巡检车如何响应？</text>
+  <text x="29" y="85" font-size="20" fill="#465e59" font-weight="400" text-anchor="start">同场观测沿巡检路线展开</text>
+  <circle cx="482" cy="78" r="6" fill="#087766" />
+  <text x="495" y="85" font-size="20" fill="#17393c" font-weight="400" text-anchor="start">巡检车</text>
+  <circle cx="623" cy="78" r="6" fill="#a26114" />
+  <text x="636" y="85" font-size="20" fill="#17393c" font-weight="400" text-anchor="start">前车</text>
+  <rect x="22" y="107" width="716" height="105" fill="#ffffff" rx="10" stroke="#ccdad2" />
+  <rect x="22" y="121" width="5" height="77" fill="#087766" rx="2" />
+  <text x="39" y="146" font-size="27" fill="#17393c" font-weight="700" text-anchor="start">限速跟随</text>
+  <text x="39" y="181" font-size="17" fill="#087766" font-weight="700" text-anchor="start">FOLLOW</text>
+  <text x="178" y="143" font-size="22" fill="#17393c" font-weight="400" text-anchor="start">前车同向移动，按净距调速。</text>
+  <rect x="177" y="159" width="531" height="39" fill="#ecf1e9" rx="8" />
+  <line x1="185" y1="179" x2="699" y2="179" stroke="#aabaae" stroke-width="1.5" stroke-dasharray="6 7" />
+  <g transform="translate(234.00 178.00)">
+    <rect x="-16" y="-13" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="-16" y="8" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="7" y="-13" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="7" y="8" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="-20" y="-9" width="40" height="18" rx="5" fill="#087766" stroke="#ffffff" stroke-width="1.4" />
+    <path d="M 2 -5 L 10 0 L 2 5" fill="none" stroke="white" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="M 26 -4 L 30 0 L 26 4 M 34 -4 L 38 0 L 34 4" fill="none" stroke="#087766" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+  </g>
+  <g transform="translate(443.89 178.00)">
+    <rect x="-16" y="-13" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="-16" y="8" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="7" y="-13" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="7" y="8" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="-20" y="-9" width="40" height="18" rx="5" fill="#a26114" stroke="#ffffff" stroke-width="1.4" />
+    <path d="M 2 -5 L 10 0 L 2 5" fill="none" stroke="white" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="M 26 -4 L 30 0 L 26 4 M 34 -4 L 38 0 L 34 4" fill="none" stroke="#a26114" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+  </g>
+  <rect x="22" y="221" width="716" height="105" fill="#ffffff" rx="10" stroke="#ccdad2" />
+  <rect x="22" y="235" width="5" height="77" fill="#91610f" rx="2" />
+  <text x="39" y="260" font-size="27" fill="#17393c" font-weight="700" text-anchor="start">停车等待</text>
+  <text x="39" y="295" font-size="17" fill="#91610f" font-weight="700" text-anchor="start">WAIT</text>
+  <text x="178" y="257" font-size="22" fill="#17393c" font-weight="400" text-anchor="start">取消导航，确认车体已停稳。</text>
+  <rect x="177" y="273" width="531" height="39" fill="#ecf1e9" rx="8" />
+  <line x1="185" y1="293" x2="699" y2="293" stroke="#aabaae" stroke-width="1.5" stroke-dasharray="6 7" />
+  <g transform="translate(283.30 292.00)">
+    <rect x="-16" y="-13" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="-16" y="8" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="7" y="-13" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="7" y="8" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="-20" y="-9" width="40" height="18" rx="5" fill="#087766" stroke="#ffffff" stroke-width="1.4" />
+    <path d="M 2 -5 L 10 0 L 2 5" fill="none" stroke="white" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+  </g>
+  <g transform="translate(487.83 292.00)">
+    <rect x="-16" y="-13" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="-16" y="8" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="7" y="-13" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="7" y="8" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="-20" y="-9" width="40" height="18" rx="5" fill="#a26114" stroke="#ffffff" stroke-width="1.4" />
+    <path d="M 2 -5 L 10 0 L 2 5" fill="none" stroke="white" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+  </g>
+  <rect x="22" y="335" width="716" height="105" fill="#ffffff" rx="10" stroke="#ccdad2" />
+  <rect x="22" y="349" width="5" height="77" fill="#087766" rx="2" />
+  <text x="39" y="374" font-size="27" fill="#17393c" font-weight="700" text-anchor="start">恢复跟随</text>
+  <text x="39" y="409" font-size="17" fill="#087766" font-weight="700" text-anchor="start">FOLLOW</text>
+  <text x="178" y="371" font-size="22" fill="#17393c" font-weight="400" text-anchor="start">前车重新移动，继续跟踪路线。</text>
+  <rect x="177" y="387" width="531" height="39" fill="#ecf1e9" rx="8" />
+  <line x1="185" y1="407" x2="699" y2="407" stroke="#aabaae" stroke-width="1.5" stroke-dasharray="6 7" />
+  <g transform="translate(339.75 406.00)">
+    <rect x="-16" y="-13" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="-16" y="8" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="7" y="-13" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="7" y="8" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="-20" y="-9" width="40" height="18" rx="5" fill="#087766" stroke="#ffffff" stroke-width="1.4" />
+    <path d="M 2 -5 L 10 0 L 2 5" fill="none" stroke="white" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="M 26 -4 L 30 0 L 26 4 M 34 -4 L 38 0 L 34 4" fill="none" stroke="#087766" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+  </g>
+  <g transform="translate(559.78 406.00)">
+    <rect x="-16" y="-13" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="-16" y="8" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="7" y="-13" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="7" y="8" width="10" height="5" rx="1.9" fill="#17393c" />
+    <rect x="-20" y="-9" width="40" height="18" rx="5" fill="#a26114" stroke="#ffffff" stroke-width="1.4" />
+    <path d="M 2 -5 L 10 0 L 2 5" fill="none" stroke="white" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="M 26 -4 L 30 0 L 26 4 M 34 -4 L 38 0 L 34 4" fill="none" stroke="#a26114" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+  </g>
+  <text x="29" y="483" font-size="26" fill="#17393c" font-weight="700" text-anchor="start">车辆真的停住了吗？</text>
+  <text x="29" y="514" font-size="20" fill="#465e59" font-weight="400" text-anchor="start">沿路线的定位进度</text>
+  <rect x="307.25249999999994" y="540" width="165.51187500000003" height="85" fill="#eee5c8" rx="0" />
+  <line x1="96" y1="625.0" x2="711" y2="625.0" stroke="#d1dcd4" stroke-width="1" />
+  <text x="84" y="631.0" font-size="16" fill="#465e59" font-weight="400" text-anchor="end">0 m</text>
+  <line x1="96" y1="586.3636363636364" x2="711" y2="586.3636363636364" stroke="#d1dcd4" stroke-width="1" />
+  <line x1="96" y1="547.7272727272727" x2="711" y2="547.7272727272727" stroke="#d1dcd4" stroke-width="1" />
+  <text x="84" y="553.7272727272727" font-size="16" fill="#465e59" font-weight="400" text-anchor="end">+3 m</text>
+  <polyline points="99.46,625.00 103.38,624.12 107.38,623.34 111.26,622.53 115.22,621.61 119.06,620.91 122.98,620.15 126.87,619.33 130.75,618.82 130.79,618.73 132.67,618.44 136.17,618.22 140.24,618.20 144.20,617.94 148.08,617.16 152.00,616.30 155.92,615.21 159.84,614.36 163.73,613.49 167.65,612.55 171.64,611.66 175.64,610.76 179.64,609.71 183.52,608.92 187.60,608.06 191.44,607.06 195.51,606.24 199.47,605.43 203.39,604.57 207.35,603.70 211.27,602.88 215.19,602.03 217.27,601.41 220.73,600.96 221.88,600.92 225.77,600.90 229.69,600.72 233.64,600.07 237.49,599.10 241.52,598.21 245.48,597.46 249.44,596.37 253.48,595.44 257.55,594.63 261.47,593.82 265.47,592.99 269.39,592.06 273.24,590.50 277.19,589.44 281.11,588.53 285.04,587.83 288.96,586.92 292.88,586.12 296.80,585.53 300.76,584.93 303.83,584.72 307.25,584.60 311.13,584.58 315.06,584.57 319.09,584.55 322.97,584.53 326.97,584.52 330.93,584.51 334.89,584.50 338.77,584.49 342.69,584.48 346.61,584.47 350.53,584.46 354.42,584.45 358.26,584.45 361.26,584.44 365.29,584.43 369.25,584.42 373.21,584.41 377.17,584.41 381.21,584.40 385.05,584.39 389.09,584.38 393.05,584.37 397.00,584.37 400.89,584.36 404.81,584.35 408.69,584.34 412.61,584.33 416.61,584.33 420.45,584.32 424.53,584.31 428.56,584.30 432.41,584.28 436.40,584.28 440.28,584.27 444.21,584.26 448.05,584.25 452.01,584.25 455.89,584.24 459.89,584.23 463.81,584.22 467.69,584.21 471.61,584.21 472.76,584.20 476.69,584.19 480.61,584.00 484.64,583.46 488.52,583.03 492.56,582.30 496.52,580.92 500.40,580.01 504.24,579.53 508.32,578.92 512.39,577.99 516.35,577.08 520.27,576.32 524.27,575.76 528.23,575.32 532.15,574.76 536.03,573.67 539.99,572.55 543.84,571.49 547.91,570.63 551.91,569.98 555.79,569.50 559.79,569.06 563.75,568.71 567.63,567.86 571.70,566.62 575.74,566.11 579.58,565.72 583.62,565.34 587.62,564.64 591.57,563.50 593.88,562.89 596.19,562.61 598.49,562.46 602.41,562.44 606.26,562.16 610.29,561.40 614.18,560.61 618.17,559.93 619.21,559.84 622.67,559.43 623.21,559.41 627.17,559.40 631.05,559.24 635.05,558.42 638.89,557.19 642.93,556.00 645.69,555.31 649.58,554.92 650.46,554.88 651.61,554.87 655.53,554.86 659.42,554.66 663.34,553.91 667.26,552.96 671.18,551.51 675.02,550.05 679.02,548.94 682.02,548.30 685.94,547.86 686.17,547.84 687.78,547.83 691.70,547.80 695.62,547.52 699.51,546.71 703.35,545.51 705.20,545.17 706.93,544.77 710.92,544.34" fill="none" stroke="#087766" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round" />
+  <circle cx="191.44" cy="607.06" r="5.5" fill="white" stroke="#087766" stroke-width="3" />
+  <circle cx="385.05" cy="584.39" r="5.5" fill="white" stroke="#91610f" stroke-width="3" />
+  <circle cx="635.05" cy="558.42" r="5.5" fill="white" stroke="#087766" stroke-width="3" />
+  <line x1="96.0" y1="625" x2="96.0" y2="630" stroke="#82958c" stroke-width="1" />
+  <text x="96.0" y="647" font-size="16" fill="#465e59" font-weight="400" text-anchor="middle">50 s</text>
+  <line x1="288.1875" y1="625" x2="288.1875" y2="630" stroke="#82958c" stroke-width="1" />
+  <text x="288.1875" y="647" font-size="16" fill="#465e59" font-weight="400" text-anchor="middle">60 s</text>
+  <line x1="480.375" y1="625" x2="480.375" y2="630" stroke="#82958c" stroke-width="1" />
+  <text x="480.375" y="647" font-size="16" fill="#465e59" font-weight="400" text-anchor="middle">70 s</text>
+  <line x1="672.5625" y1="625" x2="672.5625" y2="630" stroke="#82958c" stroke-width="1" />
+  <text x="672.5625" y="647" font-size="16" fill="#465e59" font-weight="400" text-anchor="middle">80 s</text>
+  <text x="390.00843749999996" y="557" font-size="16" fill="#76531d" font-weight="700" text-anchor="middle">等待窗</text>
+  <text x="709" y="512" font-size="17" fill="#465e59" font-weight="400" text-anchor="end">仿真时间</text>
+  <line x1="29" y1="663" x2="731" y2="663" stroke="#ccdad2" stroke-width="1" />
+  <text x="29" y="700" font-size="20" fill="#087766" font-weight="700" text-anchor="start">物理位姿复核</text>
+  <text x="181" y="700" font-size="21" fill="#17393c" font-weight="400" text-anchor="start">停稳窗内两车静止，恢复后巡检车再次前移。</text>
+</svg>

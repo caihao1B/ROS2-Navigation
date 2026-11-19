@@ -1,0 +1,121 @@
+#!/usr/bin/env python3
+"""Persist measured work and expose the tool action server's accounting service."""
+
+from collections import deque
+import fcntl
+import json
+from pathlib import Path
+import time
+
+import rclpy
+from rclpy.node import Node
+from rclpy.qos import qos_profile_sensor_data
+from rosgraph_msgs.msg import Clock
+from std_msgs.msg import String
+from field_interfaces.srv import LedgerCommand
+from field_work.ledger import Ledger, latest_at
+
+
+class WorkLedger(Node):
+    def __init__(self):
+        super().__init__("work_ledger")
+        config_path = Path(self.declare_parameter("config_file", "").value)
+        self.config = json.loads(config_path.read_text())
+        database = Path(self.declare_parameter("database_file", "work.sqlite").value)
+        database.parent.mkdir(parents=True, exist_ok=True)
+        self.owner = database.with_suffix(database.suffix + ".lock").open("a")
+        fcntl.flock(self.owner, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        self.engine = Ledger(database, self.config)
+        self.contexts = deque(maxlen=100)
+        self.sim_time = 0.0
+        self.last_clock = time.monotonic()
+        self.rewound = False
+        self.last_key = None
+        self.state = self.create_publisher(String, "/work/ledger/state", 1)
+        self.create_subscription(
+            Clock, "/clock", self.clock_update, qos_profile_sensor_data
+        )
+        self.create_subscription(String, "/work/context", self.context_update, 30)
+        self.create_subscription(String, "/work/tool/feedback", self.observe, 30)
+        self.create_service(LedgerCommand, "/work/ledger/command", self.command)
+        self.create_timer(0.05, self.publish_state)
+
+    def clock_update(self, msg):
+        now = msg.clock.sec + msg.clock.nanosec * 1e-9
+        self.rewound |= now < self.sim_time
+        if now != self.sim_time:
+            self.last_clock = time.monotonic()
+        self.sim_time = now
+
+    def context_update(self, msg):
+        self.contexts.append(json.loads(msg.data))
+
+    def observe(self, msg):
+        feedback = json.loads(msg.data)
+        ctx = min(
+            self.contexts, key=lambda x: abs(x["t"] - feedback["t"]), default=None
+        )
+        self.engine.observe(feedback, None if self.rewound else ctx, self.sim_time)
+
+    def command(self, req, res):
+        try:
+            d = json.loads(req.request_json)
+            if d["op"] == "reserve":
+                result = self.engine.reserve(d["goal"], d["attempt"], self.sim_time)
+                if result["ok"]:
+                    self.last_key = d["goal"]["idempotency_key"]
+            elif d["op"] == "finish":
+                result = self.engine.finish(
+                    d["key"], d["state"], d["reason"], d["uncertain"], self.sim_time
+                )
+            elif d["op"] == "snapshot":
+                result = self.engine.snapshot(d["key"])
+            else:
+                result = {"ok": False, "error": "UNKNOWN_OPERATION"}
+        except (KeyError, TypeError, ValueError) as exc:
+            result = {"ok": False, "error": str(exc)}
+        res.response_json = json.dumps(result)
+        return res
+
+    def publish_state(self):
+        key = self.engine.active or self.last_key
+        result = self.engine.snapshot(key, geometry=False) if key else {"ok": False}
+        reason = start_reason = "NO_GOAL"
+        ctx = latest_at(self.contexts, self.sim_time)
+        if key and result["ok"]:
+            goal = self.engine.goal(key)
+            reason = self.engine.guard(ctx, goal, self.sim_time)
+            start_reason = self.engine.guard(ctx, goal, self.sim_time, for_start=True)
+        if (
+            self.rewound
+            or time.monotonic() - self.last_clock > self.config["clock_wall_s"]
+        ):
+            reason = start_reason = "CLOCK_WATCHDOG"
+        result.update(
+            t=self.sim_time,
+            context_t=ctx["t"] if ctx else None,
+            guard=reason,
+            valid=reason == "OK",
+            start_guard=start_reason,
+            start_valid=start_reason == "OK",
+            active=bool(self.engine.active),
+        )
+        self.state.publish(String(data=json.dumps(result)))
+
+
+def main():
+    rclpy.init()
+    node = WorkLedger()
+    try:
+        rclpy.spin(node)
+    except (KeyboardInterrupt, rclpy.executors.ExternalShutdownException):
+        pass
+    finally:
+        node.engine.close()
+        node.owner.close()
+        node.destroy_node()
+        rclpy.try_shutdown()
+
+
+if __name__ == "__main__":
+    main()

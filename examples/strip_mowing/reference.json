@@ -1,0 +1,34 @@
+{
+  "parking": [
+    {
+      "segment": "headland-1",
+      "max_xy_m": 0.04871349667486329,
+      "max_yaw_rad": 0.014002928401436687,
+      "direction": 1
+    },
+    {
+      "segment": "headland-2",
+      "max_xy_m": 0.04895582239684552,
+      "max_yaw_rad": 0.009573351890470594,
+      "direction": -1
+    },
+    {
+      "segment": "headland-3",
+      "max_xy_m": 0.09378121424056331,
+      "max_yaw_rad": 0.011054434409946134,
+      "direction": 1
+    },
+    {
+      "segment": "headland-4",
+      "max_xy_m": 0.03570286504059339,
+      "max_yaw_rad": 0.025038693064344225,
+      "direction": -1
+    }
+  ],
+  "area": {
+    "target_m2": 188.3918016929564,
+    "actual_cut_m2": 5.951626739857179,
+    "confirmed_union_m2": 5.08400000000001,
+    "residual_m2": 183.30780169295636
+  }
+}

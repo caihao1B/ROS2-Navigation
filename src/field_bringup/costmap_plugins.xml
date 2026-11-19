@@ -1,0 +1,1 @@
+<library path="field_costmaps"><class name="field::ObservedPriorLayer" type="field::ObservedPriorLayer" base_class_type="nav2_costmap_2d::Layer"/><class name="field::ObservedRiskLayer" type="field::ObservedRiskLayer" base_class_type="nav2_costmap_2d::Layer"/></library>
